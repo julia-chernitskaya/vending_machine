@@ -1,0 +1,126 @@
+.machine {
+
+  &, .bordered {
+    background-color: #DADADA;
+    border: 2px solid #939393;
+    box-shadow: 0px 0px 5px #1A1A1A;
+  }
+
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  margin: 0 auto;
+  width: 600px;
+  overflow: hidden;
+  height: 800px;
+  padding: 20px;
+
+  .machine-header {
+    background-image: url("/img/logo.png");
+    width: 597px;
+    background-size: 100%;
+    height: 213px;
+  }
+
+  .machine-content {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+
+    .machine-good {
+      width: 195px;
+      height: 132px;
+      float: left;
+      position: relative;
+      &.machine-good-selected{
+        background-color: #BBBBBB;
+      }
+      &:hover {
+        background-color: #939393;
+      }
+      &.machine-good-unavailable {
+        background-color: red;
+        cursor: default;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+      .machine-good-content {
+        width: 75px;
+        padding: 20px;
+        float: left;
+
+        .machine-good-img {
+          height: 100px;
+        }
+      }
+      .machine-good-price {
+        float: left;
+        font-weight: 800;
+        font-size: 22px;
+        padding: 15px 7px;
+        width: 60px;
+      }
+      .machine-good-name {
+        font-size: 14px;
+        float: left;
+        width: 60px;
+        padding: 0 7px;
+      }
+      .machine-good-to-buy {
+        color: red;
+        font-size: 33px;
+        font-weight: 800;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 4px;
+        width: 60px;
+        text-align: right;
+        border: 1px dashed red;
+      }
+    }
+  }
+
+  .machine-buttons {
+    height: 150px;
+    width: 99%;
+    margin-top: 20px;
+
+    .machine-button {
+      height: 40px;
+      width: 254px;
+      margin: 15px 20px;
+      line-height: 40px;
+      font-size: 45px;
+      font-weight: 800;
+      text-align: center;
+      float: left;
+      color: #4A4A4A;
+      cursor: pointer;
+
+      &:hover {
+        color:red;
+      }
+    }
+    .machine-button-total {
+      width: 200px;
+      border: 1px solid red;
+      padding: 20px;
+      margin: 26px;
+      float: right;
+      text-align: left;
+      font-size: 40px;
+      line-height: 40px;
+      color: red;
+    }
+  }
+}
